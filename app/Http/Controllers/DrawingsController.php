@@ -51,7 +51,6 @@ class DrawingsController extends Controller
     {
         $post = \App\Posts::find($id);
         $post->delete();
-
         $result = \App\Posts::all();
             return redirect('/drawings');
     }
